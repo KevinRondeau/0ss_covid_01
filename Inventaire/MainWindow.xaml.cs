@@ -13,6 +13,7 @@ namespace Inventaire
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
+        //mod for initial commit
         CustomersDataService customersDataService = new CustomersDataService();
 
         private ObservableCollection<Customer> customers;
