@@ -18,7 +18,7 @@
                     <Separator/>
                     <MenuItem Header="_Nouveau client" Click="CustomerNew_Click"/>
                     <Separator/>
-                    <MenuItem Header="_Quitter"/>
+                    <MenuItem Header="_Quitter" Click="CustomerView_Close"/>
                 </MenuItem>
                 <MenuItem Header="_Édition">
                     <MenuItem Header="Couper..."/>
@@ -31,6 +31,12 @@
                     <MenuItem Header="Fonction 3"/>
                 </MenuItem>
             </Menu>
+            <ToolBar>
+                <ToolBar.Items>
+                    <Button Content="Nouveau" Margin="6 0" Click="CustomerNew_Click"/>
+                    <Button Content="Quitter" Margin="6 0" Click="CustomerView_Close"/>
+                </ToolBar.Items>
+            </ToolBar>
         </StackPanel>
         <StatusBar DockPanel.Dock="Bottom" Height="25">
             <TextBlock Text="Client sélectionné : " />
@@ -46,6 +52,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
+
                 <StackPanel Margin="6" Orientation="Horizontal" x:Name="spHeader">
                     <TextBlock Text="Liste des clients" />
                     <Button Content="Nouveau client" Margin="6 0" Click="CustomerNew_Click"/>

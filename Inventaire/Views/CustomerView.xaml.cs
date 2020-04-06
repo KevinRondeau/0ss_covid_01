@@ -43,6 +43,9 @@ namespace Inventaire
 
         }
 
-
+        private void CustomerView_Close(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }  
 }
