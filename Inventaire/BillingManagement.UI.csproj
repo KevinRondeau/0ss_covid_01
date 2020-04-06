@@ -20,4 +20,10 @@
     </Resource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="Views\CustomerView.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
 </Project>
