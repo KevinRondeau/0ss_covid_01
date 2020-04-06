@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\app_models\BillingManagement.Models.csproj" />
+  </ItemGroup>
+
 </Project>
